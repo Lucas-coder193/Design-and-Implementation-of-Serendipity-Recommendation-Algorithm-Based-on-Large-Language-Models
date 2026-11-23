@@ -1,0 +1,112 @@
+{
+  "source": "Recomputed from locally saved predictions; no model training or inference rerun.",
+  "weight_order": [
+    "relevance",
+    "utility",
+    "novelty",
+    "unexpectedness",
+    "diversity"
+  ],
+  "experiments": {
+    "random": {
+      "groups": 62,
+      "distinct_users": 57,
+      "items": 1240,
+      "weights": [
+        2.0,
+        3.5,
+        1.0,
+        2.5,
+        1.0
+      ],
+      "metrics": {
+        "HR@3": 0.145161,
+        "HR@5": 0.274194,
+        "HR@10": 0.612903,
+        "NDCG@10": 0.25663,
+        "MRR": 0.179101,
+        "AUC": 0.54966
+      }
+    },
+    "target_similar": {
+      "groups": 62,
+      "distinct_users": 57,
+      "items": 1240,
+      "weights": [
+        2.0,
+        3.0,
+        1.0,
+        2.5,
+        1.5
+      ],
+      "metrics": {
+        "HR@3": 0.209677,
+        "HR@5": 0.290323,
+        "HR@10": 0.548387,
+        "NDCG@10": 0.282974,
+        "MRR": 0.236063,
+        "AUC": 0.544143
+      }
+    },
+    "history_similar": {
+      "groups": 62,
+      "distinct_users": 57,
+      "items": 1240,
+      "weights": [
+        2.5,
+        1.0,
+        1.5,
+        1.5,
+        3.5
+      ],
+      "metrics": {
+        "HR@3": 0.306452,
+        "HR@5": 0.419355,
+        "HR@10": 0.709677,
+        "NDCG@10": 0.386698,
+        "MRR": 0.311485,
+        "AUC": 0.643888
+      }
+    },
+    "history_similar_analyst_only": {
+      "groups": 62,
+      "distinct_users": 57,
+      "items": 1240,
+      "weights": [
+        1.0,
+        9.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metrics": {
+        "HR@3": 0.290323,
+        "HR@5": 0.419355,
+        "HR@10": 0.725806,
+        "NDCG@10": 0.341779,
+        "MRR": 0.24492,
+        "AUC": 0.605263
+      }
+    },
+    "history_similar_explorer_only": {
+      "groups": 62,
+      "distinct_users": 57,
+      "items": 1240,
+      "weights": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        8.0
+      ],
+      "metrics": {
+        "HR@3": 0.290323,
+        "HR@5": 0.33871,
+        "HR@10": 0.693548,
+        "NDCG@10": 0.360764,
+        "MRR": 0.284075,
+        "AUC": 0.628608
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "synthetic": true,
+  "description": "Fictional titles and hand-authored scores; not experimental data.",
+  "user_history": [
+    {
+      "title": "Harbor Letters",
+      "description": "A quiet drama about friendship in a coastal town."
+    },
+    {
+      "title": "A Small Kitchen",
+      "description": "Neighbors build a community around cooking."
+    },
+    {
+      "title": "The Last Bus Home",
+      "description": "A family reconnects during an ordinary journey."
+    },
+    {
+      "title": "Summer Sketchbook",
+      "description": "A young painter learns to trust old friends."
+    },
+    {
+      "title": "Rain on Tuesday",
+      "description": "Two strangers form a friendship through shared routines."
+    }
+  ],
+  "weights": {
+    "relevance": 2.5,
+    "utility": 1.0,
+    "novelty": 1.5,
+    "unexpectedness": 1.5,
+    "diversity": 3.5
+  },
+  "candidates": [
+    {
+      "title": "The Clockwork Garden",
+      "description": "A gardener and a robot rebuild a community after a storm.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4.5
+      }
+    },
+    {
+      "title": "Messages from Europa",
+      "description": "A distant space station receives letters about everyday life on Earth.",
+      "scores": {
+        "relevance": 3.5,
+        "utility": 4,
+        "novelty": 4.5,
+        "unexpectedness": 4.5,
+        "diversity": 5
+      }
+    },
+    {
+      "title": "The Traveling Orchestra",
+      "description": "Musicians cross an unfamiliar country and discover a shared melody.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4.5,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "Another Harbor Summer",
+      "description": "Old friends reunite in their familiar seaside neighborhood.",
+      "scores": {
+        "relevance": 5,
+        "utility": 4,
+        "novelty": 1,
+        "unexpectedness": 1,
+        "diversity": 1
+      }
+    },
+    {
+      "title": "The Kitchen Next Door",
+      "description": "A cook shares recipes with close neighbors.",
+      "scores": {
+        "relevance": 4.5,
+        "utility": 4,
+        "novelty": 1.5,
+        "unexpectedness": 1.5,
+        "diversity": 1.5
+      }
+    },
+    {
+      "title": "Race Beyond Midnight",
+      "description": "Professional drivers compete on a dangerous mountain circuit.",
+      "scores": {
+        "relevance": 1.5,
+        "utility": 2,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "The Silent Archive",
+      "description": "An archivist uncovers the emotional history of a vanished city.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4,
+        "novelty": 3.5,
+        "unexpectedness": 3.5,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "Gravity Lessons",
+      "description": "A retired teacher helps children build an impossible flying machine.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "One More Bus Stop",
+      "description": "A commuter returns to a familiar village to meet family.",
+      "scores": {
+        "relevance": 4.5,
+        "utility": 4,
+        "novelty": 1.5,
+        "unexpectedness": 1.5,
+        "diversity": 1
+      }
+    },
+    {
+      "title": "Desert Signal",
+      "description": "A radio operator connects isolated desert communities.",
+      "scores": {
+        "relevance": 3.5,
+        "utility": 4,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4.5
+      }
+    },
+    {
+      "title": "Frozen Championship",
+      "description": "Athletes pursue medals through a highly technical winter competition.",
+      "scores": {
+        "relevance": 2,
+        "utility": 2.5,
+        "novelty": 3.5,
+        "unexpectedness": 3.5,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "The Map of Dreams",
+      "description": "A mapmaker follows imagined roads to understand a lost friendship.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "Office at Nine",
+      "description": "Coworkers face small daily misunderstandings.",
+      "scores": {
+        "relevance": 3,
+        "utility": 3,
+        "novelty": 2,
+        "unexpectedness": 2,
+        "diversity": 2
+      }
+    },
+    {
+      "title": "Underwater Postcards",
+      "description": "Ocean researchers record messages that help a family reconnect.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4,
+        "novelty": 4.5,
+        "unexpectedness": 4,
+        "diversity": 4.5
+      }
+    },
+    {
+      "title": "Beyond the Scoreboard",
+      "description": "A sports statistician discovers the stories behind forgotten players.",
+      "scores": {
+        "relevance": 3,
+        "utility": 3.5,
+        "novelty": 3,
+        "unexpectedness": 3.5,
+        "diversity": 3.5
+      }
+    },
+    {
+      "title": "Garden on Floor Eight",
+      "description": "Apartment residents learn to maintain a rooftop garden.",
+      "scores": {
+        "relevance": 4.5,
+        "utility": 4,
+        "novelty": 2,
+        "unexpectedness": 2,
+        "diversity": 2
+      }
+    },
+    {
+      "title": "The Museum After Dark",
+      "description": "Night guards meet living exhibits and rethink their own lives.",
+      "scores": {
+        "relevance": 3.5,
+        "utility": 4,
+        "novelty": 4,
+        "unexpectedness": 4,
+        "diversity": 4
+      }
+    },
+    {
+      "title": "Footprints in Clay",
+      "description": "An artisan records the changing traditions of a remote village.",
+      "scores": {
+        "relevance": 3.5,
+        "utility": 3.5,
+        "novelty": 3,
+        "unexpectedness": 3,
+        "diversity": 3.5
+      }
+    },
+    {
+      "title": "Festival of Lanterns",
+      "description": "A family prepares for an annual hometown celebration.",
+      "scores": {
+        "relevance": 4,
+        "utility": 4,
+        "novelty": 2,
+        "unexpectedness": 2,
+        "diversity": 2
+      }
+    },
+    {
+      "title": "The Unfinished Satellite",
+      "description": "Two unlikely collaborators turn an abandoned satellite into a work of art.",
+      "scores": {
+        "relevance": 3.5,
+        "utility": 4,
+        "novelty": 5,
+        "unexpectedness": 4.5,
+        "diversity": 5
+      }
+    }
+  ]
+}

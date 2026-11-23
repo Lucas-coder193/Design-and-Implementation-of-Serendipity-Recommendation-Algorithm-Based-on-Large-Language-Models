@@ -1,0 +1,39 @@
+# --- 核心深度学习框架 (建议先单独安装 torch 以匹配 CUDA 版本) ---
+torch>=2.1.0
+torchvision
+torchaudio
+
+# --- 大模型与微调核心库 ---
+transformers>=4.45.0
+accelerate>=0.30.0
+peft>=0.12.0
+datasets>=2.16.0
+bitsandbytes>=0.43.0
+sentencepiece
+einops
+scipy
+
+# --- LLaMA-Factory 及其依赖 ---
+gradio>=4.0.0
+rouge-chinese
+jieba
+nltk
+pandas
+matplotlib
+sse-starlette
+uptrace
+pydantic
+
+# --- 数据处理与权重搜索脚本 ---
+numpy
+scikit-learn
+tqdm
+
+# --- API calls, interactive demo, and comparison methods ---
+requests
+urllib3
+openai
+streamlit
+plotly
+rank-bm25
+sentence-transformers

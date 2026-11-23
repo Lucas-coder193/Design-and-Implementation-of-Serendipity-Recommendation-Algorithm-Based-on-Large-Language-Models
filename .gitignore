@@ -1,0 +1,44 @@
+.conda/
+.idea/
+.trae/
+.vscode/
+SerenLens/
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.codex/
+*.log
+
+# Datasets, generated prompts/predictions, databases and model weights
+*.json
+*.jsonl
+*.csv
+*.tsv
+*.db
+*.sqlite*
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+outputs/
+
+# Local copies of reference papers and generated interactive plots
+*.pdf
+*.html
+
+# Earlier narrative report is retained locally; README contains verified claims.
+/项目总结报告.md
+
+# Small, synthetic examples are intentionally published
+!examples/*.json
+!examples/*.jsonl
+!results/*.json

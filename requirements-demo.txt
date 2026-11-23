@@ -1,0 +1,4 @@
+# Lightweight Streamlit demo; no local language model is required.
+numpy
+streamlit
+openai
