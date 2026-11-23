@@ -72,14 +72,18 @@ python -m streamlit run 系统演示/webui.py
 
 ## 数据与完整实验
 
-电影补全表包含 `item_id`、`corrected_title` 和 `description` 三列，共 23,854 个条目，每个 `item_id` 一行。片名和简介由 Gemini 根据评论线索推断，可能含有类型描述或推断错误。发布前筛除了与原评论有较长连续重合的条目，以及无法确认生成来源或字段缺失等异常记录。
+电影和书籍补全表均包含 `item_id`、`corrected_title` 和 `description` 三列，每个 `item_id` 一行。标题和简介由 Gemini 根据评论线索推断，可能含有类型描述或推断错误。发布前筛除了与原评论有较长连续重合的条目及存在异常字段的记录。
 
-1. 从 [SerenLens 官方仓库下载](https://github.com/zhefu2/SerenLens#download) `Dataset/SerenLens_Movies.csv`。
-2. 从 [GitHub Releases 下载 `serenlens_movie_metadata.csv`](https://github.com/Lucas-coder193/Design-and-Implementation-of-Serendipity-Recommendation-Algorithm-Based-on-Large-Language-Models/releases/download/serenlens-movie-metadata-v1/serenlens_movie_metadata.csv)。
-3. 将两个 CSV 放到项目根目录，从根目录运行以下命令。脚本按 `item_id` 匹配，保留原始行，无匹配项的补全字段留空。
+| 领域 | SerenLens 原始文件 | 补全表 | 条目数 |
+|---|---|---|---:|
+| 电影与电视 | `Dataset/SerenLens_Movies.csv` | [下载电影补全表](https://github.com/Lucas-coder193/Design-and-Implementation-of-Serendipity-Recommendation-Algorithm-Based-on-Large-Language-Models/releases/download/serenlens-movie-metadata-v1/serenlens_movie_metadata.csv) | 23,854 |
+| 书籍 | `Dataset/SerenLens_Books.csv` | [下载书籍补全表](https://github.com/Lucas-coder193/Design-and-Implementation-of-Serendipity-Recommendation-Algorithm-Based-on-Large-Language-Models/releases/download/serenlens-book-metadata-v1/serenlens_book_metadata.csv) | 5,466 |
+
+从 [SerenLens 官方仓库](https://github.com/zhefu2/SerenLens#download)下载原始文件。把原始 CSV 和对应的补全表放到本项目根目录，并运行对应命令。脚本按 `item_id` 匹配并保留全部原始行，无匹配项的补全字段留空。书籍补全表覆盖项目中已有书名和简介补全结果的部分书籍。
 
 ```bash
-python scripts/merge_movie_metadata.py SerenLens_Movies.csv serenlens_movie_metadata.csv 标题简介补全/SerenLens_Movies_Enriched.csv
+python scripts/merge_serenlens_metadata.py SerenLens_Movies.csv serenlens_movie_metadata.csv 标题简介补全/SerenLens_Movies_Enriched.csv
+python scripts/merge_serenlens_metadata.py SerenLens_Books.csv serenlens_book_metadata.csv 构建书籍测试集/SerenLens_Books_Enriched.csv
 ```
 
 原始交互记录、完整训练和测试集、数据库、模型权重和论文 PDF 需单独准备。`examples/` 是虚构演示数据。
