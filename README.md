@@ -72,7 +72,17 @@ python -m streamlit run 系统演示/webui.py
 
 ## 数据与完整实验
 
-原始数据、完整生成数据、用户记录、数据库、模型权重和论文 PDF 不随仓库分发。请从数据提供方取得 SerenLens，遵守其使用条件，再恢复或生成相应本地文件。`examples/` 不能用于替代正式评测数据。
+电影补全表包含 `item_id`、`corrected_title` 和 `description` 三列，共 23,854 个条目，每个 `item_id` 一行。片名和简介由 Gemini 根据评论线索推断，可能含有类型描述或推断错误。发布前筛除了与原评论有较长连续重合的条目，以及无法确认生成来源或字段缺失等异常记录。
+
+1. 从 [SerenLens 官方仓库下载](https://github.com/zhefu2/SerenLens#download) `Dataset/SerenLens_Movies.csv`。
+2. 从 [GitHub Releases 下载 `serenlens_movie_metadata.csv`](https://github.com/Lucas-coder193/Design-and-Implementation-of-Serendipity-Recommendation-Algorithm-Based-on-Large-Language-Models/releases/download/serenlens-movie-metadata-v1/serenlens_movie_metadata.csv)。
+3. 将两个 CSV 放到项目根目录，从根目录运行以下命令。脚本按 `item_id` 匹配，保留原始行，无匹配项的补全字段留空。
+
+```bash
+python scripts/merge_movie_metadata.py SerenLens_Movies.csv serenlens_movie_metadata.csv 标题简介补全/SerenLens_Movies_Enriched.csv
+```
+
+原始交互记录、完整训练和测试集、数据库、模型权重和论文 PDF 需单独准备。`examples/` 是虚构演示数据。
 
 现有本地电影数据统计：训练集 **9,040 条 / 472 名用户**，测试集 **2,060 条 / 118 名用户**，训练和测试用户无重叠。训练/测试样本中惊喜与非惊喜样本比例为 1:19。书籍领域构建了 1,000 条测试样本。
 
